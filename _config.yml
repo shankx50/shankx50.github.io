@@ -4,7 +4,7 @@ email: shankx@mac.com
 description: > # this means to ignore newlines until "baseurl:"
   Whatever IT Takes describes the journey of a junior software developer who is determined to achieve mastery in the art of programming. 
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://shankx50.github.io" # the base hostname & protocol for your site
 twitter_username: ShankarPoncelet
 github_username:  shankx50
 
