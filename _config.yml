@@ -1,6 +1,6 @@
 # Site settings
 title: Whatever IT Takes!
-email: shankx@mac.com
+#email: shankx@mac.com
 description: > # this means to ignore newlines until "baseurl:"
   Whatever IT Takes describes the journey of a junior software developer who is determined to achieve mastery in the art of programming. 
 baseurl: "" # the subpath of your site, e.g. /blog/
