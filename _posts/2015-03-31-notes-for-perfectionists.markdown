@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Notes for Perfectionists - or Myself"
-date:   2015-04-05
+date:   2015-04-07
 categories: perfectionist
 ---
 
