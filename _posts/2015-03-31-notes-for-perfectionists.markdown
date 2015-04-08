@@ -11,6 +11,10 @@ One major <strong>problem</strong> that <strong>perfectionists</strong> often ru
 
 I promise that if you are a perfectionist, and you learn to <strong>adjust your level of perfectionism</strong> to the needs and reality of the situation you are dealing with, a whole new world of opportunities will open up to you. Give it a try!
 
+Michael Locke is a very <strong>inspiring</strong> UI/UX designer who puts a lot of effort towards helping other people. He has a pretty awesome and affordable web design training on <a href="http://www.mlwebco.com/" target="_blank">www.mlwebco.com</a> which I can only recommend. He recorded a video in which he speaks about perfectionism. He talks about the importance of <strong>just putting your work out there</strong>, without being afraid that it may not be good enough. That is knowing the rules of the game. Michael learned that you can get great job offers and projects by showing what you know today.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/p5maTDZNkn0?rel=0" frameborder="0" allowfullscreen></iframe>
+
 <h1 id="measuring">Choosing your measuring stick</h1>
 
 I get it like no one else - trust me. You <strong>want to be perfect</strong> and you <strong>compare yourself</strong> to people you admire. You most likely have a mentor, a colleague, or a technical author you highly respect.
