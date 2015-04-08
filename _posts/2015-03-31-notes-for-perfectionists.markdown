@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Notes for Perfectionists - or Myself"
-date:   2015-04-07
+date:   2015-04-05
 categories: perfectionist
 ---
 
@@ -11,11 +11,9 @@ One major <strong>problem</strong> that <strong>perfectionists</strong> often ru
 
 I promise that if you are a perfectionist, and you learn to <strong>adjust your level of perfectionism</strong> to the needs and reality of the situation you are dealing with, a whole new world of opportunities will open up to you. Give it a try!
 
-Michael Locke is a very <strong>inspiring</strong> UI/UX designer who puts a lot of effort towards helping other people. He has a pretty awesome and affordable web design training on <a href="http://www.mlwebco.com/" target="_blank">www.mlwebco.com</a> which I can only recommend. He recorded a video in which he speaks about perfectionism. He talks about the importance of <strong>just putting your work out there</strong>, without being afraid that it may not be good enough. That is knowing the rules of the game. Michael learned that you can get great job offers and projects by showing what you know today.
-<p class="videoWrapper">
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/p5maTDZNkn0?rel=0" frameborder="0" allowfullscreen></iframe>
-</p>
+Michael Locke is a very <strong>inspiring</strong> UI/UX designer who puts a lot of effort towards helping other people. He has a pretty awesome and affordable web design training on <a href="http://www.mlwebco.com/" target="_blank">www.mlwebco.com</a> which I can only recommend. He recorded a video in which he speaks about perfectionism. He talks about the importance of <strong>just putting your work out there</strong>, without being afraid that it may not be good enough. That is knowing the rules of the game. Michael learned that you can get great job offers and projects by showing what you know.
 
+<div style="text-align:center;"><iframe min-width="20%" height="315" src="https://www.youtube.com/embed/p5maTDZNkn0?rel=0" frameborder="0" allowfullscreen></iframe></div>
 
 <h1 id="measuring">Choosing your measuring stick</h1>
 
