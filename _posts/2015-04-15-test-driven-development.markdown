@@ -7,7 +7,9 @@ categories: programming testing
 
 <strong>TDD</strong> stands for <strong>test-driven-development</strong> and it is one of the words that a junior developer will hear very often. If you are like me, then you have no idea what TDD is. You're told that it is a good approach to creating and maintaining clean, extendable code. That's right, but you have now idea why. Why would you have to test code that is working? Wouldn’t you just see an error if the code was not working?
 
-No! You don’t test whether the syntax of your code is correct - <strong>you test if the LOGIC of your code is correct</strong>. 
+No! You don’t test whether the syntax of your code is correct - <strong>you test if the LOGIC of your code is correct</strong>.
+
+This means that in a way, writing tests is a lot easier than writing functional code. You don't have to write code that solves a problem - all you do is check whether existing code actually solves a given problem or not. This requires a shift of perspectives and is the main reason why new coders have trouble understanding testing.<strong> We are taught programming by writing solutions, not by writing tests around existing solutions.</strong>
 
 <h2>Unit tests</h2>
 
