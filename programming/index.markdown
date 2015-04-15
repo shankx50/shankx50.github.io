@@ -17,4 +17,4 @@ permalink: /programming/
 1. [Testing and Test-Driven-Development (TDD)]({% post_url 2015-04-15-test-driven-development %})
 2. What programming language should I use?
 3. What is a finite state machine?
-4. What is an Immediately-Invoked Function Expression (IFEE)
+4. What is an Immediately-Invoked Function Expression (IIFE)
