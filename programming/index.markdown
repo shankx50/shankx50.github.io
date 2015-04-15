@@ -14,8 +14,6 @@ permalink: /programming/
 	Below is a list of topics that I intend to write about in more detail.
 </p>
 
-<ol>
-	<li>Testing</li>
-	<li>What programming language should I use?</li>
-	<li>...</li>
-</ol>
+1. [Testing and Test-Driven-Development (TDD)]({% post_url 2015-04-15-test-driven-development %})
+2. What programming language should I use?
+3. ...
