@@ -1,0 +1,27 @@
+---
+layout: post
+title:  "Object-oriented-programming vs. functional programming"
+date:   2015-04-16
+categories: programming
+---
+
+Since I have started programming I have heard coders talk about the differences between object-oriented-programming (OOP) and functional programming.
+
+## What is object-oriented-programming?
+
+According to the book _Scala in action_ by Nilanjan Raychaudhuri, a pure object-oriented language should have the following characteristics:
+
+* Encapsulation/infromation hiding
+* Inheritance
+* Polymorphism/dynamic binding
+* All predefined types are objects
+* All operations are performed by sending messages to objects
+* All user-defined types are objects
+
+OOP helps the programmer to put order in his code and its underlying concepts. Once OOP is understood, many problems can be solved by modeling problems after real world objects.
+
+An object has **states** and **behavior** where its states are attributes and behavior is described by methods/functions linked to that object.
+
+## What is functional programming?
+
+...

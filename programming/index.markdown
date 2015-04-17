@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Programming
-date:   2015-04-15
+date:   2015-04-16
 permalink: /programming/
 ---
 <p>Last update: {{ page.date | date: "%b %-d, %Y" }}</p>
@@ -18,3 +18,4 @@ permalink: /programming/
 2. What programming language should I use?
 3. What is a finite state machine?
 4. What is an Immediately-Invoked Function Expression (IIFE)
+5. [Object-oriented-programming and functional programming]({% post_url 2015-04-16-oop-vs-fp %})
