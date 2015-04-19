@@ -18,7 +18,7 @@ According to the book _Scala in action_ by Nilanjan Raychaudhuri, a pure object-
 * All operations are performed by sending messages to objects
 * All user-defined types are objects
 
-OOP helps the programmer to put order in his code and its underlying concepts. Once OOP is understood, many problems can be solved by modeling problems after real world objects.
+OOP helps the programmer to structure his/her code and its underlying concepts. Once OOP is understood, many problems can be solved by modeling problems after real world objects.
 
 An object has **states** and **behavior** where its states are attributes and behavior is described by methods/functions linked to that object.
 
