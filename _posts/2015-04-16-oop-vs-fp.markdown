@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  "Object-oriented-programming vs. functional programming"
+date:   2015-04-16
+categories: programming
 permalink: /oop-vs-fp/
 ---
 
