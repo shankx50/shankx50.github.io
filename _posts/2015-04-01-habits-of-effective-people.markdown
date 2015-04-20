@@ -3,6 +3,7 @@ layout: post
 title:  "Habits of Effective People"
 date:   2015-04-15
 categories: effectivity
+permalink: habits-of-effective-people
 ---
 
 <ol>
