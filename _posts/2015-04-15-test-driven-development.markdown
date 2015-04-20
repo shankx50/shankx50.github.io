@@ -13,7 +13,7 @@ This means that in a way, writing tests is a lot easier than writing functional 
 
 TDD reverses the situation. In real TDD the coder writes the **test first** - then they try to write a solution that makes the test pass. There is a very important advantage in doing so. While working through the problem solving process, the coder doesn't just focus on the programming langue. There is a more **creativity-friendly environment** in his mind that allows for good solutions to come forth. It is not so easy to explain what I mean by that, but I think watching this <a href="http://www.pluralsight.com/courses/play-by-play-jim-weirich" target="_blank">set of videos</a> will help you understand. Pay attention to how <a href="http://en.wikipedia.org/wiki/Jim_Weirich" target="_blank">Jim Weirich</a> approaches solving the problem given to him.
 
-<h2>Unit tests</h2>
+<h2>Unit test</h2>
 
 Why are unit tests called unit tests? Because you test a unit of code - very often (not always) that is a method that takes an input and gives a single output.
 
