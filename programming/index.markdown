@@ -14,8 +14,8 @@ permalink: /programming/
 	Below is a list of topics that I intend to write about in more detail.
 </p>
 
-1. [Testing and Test-Driven-Development (TDD)]({% post_url 2015-04-15-test-driven-development %})
+1. [Testing and Test-Driven-Development (TDD)](/test-driven-development)
 2. What programming language should I use?
 3. What is a finite state machine?
 4. What is an Immediately-Invoked Function Expression (IIFE)
-5. [Object-oriented-programming and functional programming]({% post_url 2015-04-16-oop-vs-fp %})
+5. [Object-oriented-programming and functional programming](/oop-vs-fp)

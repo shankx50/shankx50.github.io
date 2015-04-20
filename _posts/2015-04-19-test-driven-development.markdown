@@ -1,8 +1,9 @@
 ---
 layout: post
 title:  "Test Driven Development"
-date:   2015-04-15
+date:   2015-04-19
 categories: programming testing
+permalink: /test-driven-development/
 ---
 
 <strong>TDD</strong> stands for <strong>test-driven-development</strong> and it is one of the words that a junior developer will hear very often. If you are like me, then you have no idea what TDD is. You're told that it is a good approach to creating and maintaining clean, extendable code. That's right, but you have now idea why. Why would you have to test code that is working? Wouldn’t you just see an error if the code was not working?
