@@ -3,6 +3,7 @@ layout: post
 title:  "Notes for Perfectionists - or Myself"
 date:   2015-03-31
 categories: perfectionist
+permalink: /notes-for-perfectionists
 ---
 
 <h1 id="rules">Understanding the rules of the game(s)</h1>
