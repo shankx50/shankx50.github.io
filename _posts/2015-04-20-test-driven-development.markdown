@@ -36,7 +36,7 @@ For example, a simplified end-to-end testing of an email application might invol
 - Composing, forwarding or replying to email
 - Logging out of the application
 
-The simplest way of conducting E2E tests is by just opening a browser and trying the things that need testing. Hence E2E can be done **without writing code.**I imagine that beginner programmers unknowingly conduct a lot of E2E testing just because, as opposed to unit testing, is feels very natural and straightforward. Note that E2E testing is only possible when functioning units of codes exist (tested or not).
+The simplest way of conducting E2E tests is by just opening a browser and trying the things that need testing. Hence E2E can be done **without writing code.** I imagine that beginner programmers unknowingly conduct a lot of E2E testing just because, as opposed to unit testing, is feels very natural and straightforward. Note that E2E testing is only possible when functioning units of codes exist (tested or not).
 
 <script type="text/javascript"
   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
