@@ -26,3 +26,5 @@ An object has **states** and **behavior** where its states are attributes and be
 ## What is functional programming?
 
 ...
+
+{% include disqus.html %}

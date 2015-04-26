@@ -17,6 +17,6 @@ permalink: /habits-of-effective-people
 		<blockquote>To make money, either by working full-time, part-time or freelancing from home, requires that you are passionate about something. Passion trumps everything and all obstacles.</blockquote> Here is the link to the <a href="http://qr.ae/LXosK" target="_blank">full answer</a>.</p>
 	<p>Opponents of the passion idea argue that it often leads people to chase after an ideal that doesn't exist. They suggest that you should rather be more pragmatic and just meet the current demand on the job market. While this may be true from a purely financial and tactical perspective, it certainly doesn't lead to <strong>happiness and fulfillment</strong>. It's up to you to decide what is more important to you. I suggest you allow yourself enough time to conduct some experiments. Don't just assume you like something, try it! If it turns out that you were wrong, try again! <strong>Be bold, fail fast and fall forward!</strong></p>
 	<p>Trying out different things is often made impossible due to constrains we face. Therefore, it is important that you allow for an environment that grants you the necessary flexibility. Watch out not to bind yourself to impeding liabilities too early. I understand that not everyone may have that choice in life! If you do however, make sure that you are not in your own way.</p>
-
-
 </ol>
+
+{% include disqus.html %}

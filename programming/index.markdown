@@ -19,3 +19,5 @@ permalink: /programming/
 3. What is a finite state machine?
 4. What is an Immediately-Invoked Function Expression (IIFE)
 5. [Object-oriented-programming and functional programming](/oop-vs-fp)
+
+{% include disqus.html %}

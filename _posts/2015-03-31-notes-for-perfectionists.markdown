@@ -33,3 +33,5 @@ Why do perfectionists often feel like having to tame their perfectionism? After 
 <li><strong>Stop caring</strong> about what <strong>other people</strong> think since most will never get you....and they don't need to either.</li></ol>
 
 You may want to swap the term <i>perfectionist</i> with the word <i>geek</i>, if you consider yourself to be one.
+
+{% include disqus.html %}

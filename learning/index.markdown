@@ -11,3 +11,5 @@ I am a huge fan of education - both traditional education and open-education. Wh
 ***
 
 Online courses completed:
+
+{% include disqus.html %}

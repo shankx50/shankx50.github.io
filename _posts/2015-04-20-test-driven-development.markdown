@@ -82,3 +82,5 @@ Learn more about MathJax <a href="http://docs.mathjax.org/en/latest/index.html" 
 - A/B testing
 - Concurrent testing
 - Conformance testing or type testing
+
+{% include disqus.html %}
