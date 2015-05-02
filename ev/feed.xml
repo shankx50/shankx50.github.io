@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Whatever IT Takes!</title>
+    <description>Whatever IT Takes describes the journey of a junior software developer who is determined to achieve mastery in the art of programming.
+</description>
+    <link>http://shankx50.github.io/</link>
+    <atom:link href="http://shankx50.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 01 May 2015 20:34:22 -0400</pubDate>
+    <lastBuildDate>Fri, 01 May 2015 20:34:22 -0400</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Hello Alexa</title>
+        <description>&lt;div id=&quot;fb-root&quot;&gt;&lt;/div&gt;
+&lt;script&gt;(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = &quot;//connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.3&quot;;  fjs.parentNode.insertBefore(js, fjs);}(document, &#39;script&#39;, &#39;facebook-jssdk&#39;));&lt;/script&gt;
+&lt;div class=&quot;fb-video&quot; data-allowfullscreen=&quot;true&quot; data-href=&quot;/ShankarPoncelet/videos/vb.772076488/10153251592336489/?type=1&quot;&gt;&lt;div class=&quot;fb-xfbml-parse-ignore&quot;&gt;&lt;blockquote cite=&quot;/ShankarPoncelet/videos/10153251592336489/&quot;&gt;&lt;a href=&quot;/ShankarPoncelet/videos/10153251592336489/&quot;&gt;&lt;/a&gt;&lt;p&gt;Love my new tech-toy.&lt;/p&gt;Posted by &lt;a href=&quot;https://www.facebook.com/ShankarPoncelet&quot;&gt;Shankar Poncelet&lt;/a&gt; on Saturday, April 18, 2015&lt;/blockquote&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = &#39;shankxus&#39;;
+    var disqus_identifier = &#39;/hello-alexa&#39;;
+
+    /* * * DON&#39;T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement(&#39;script&#39;); dsq.type = &#39;text/javascript&#39;; dsq.async = true;
+        dsq.src = &#39;//&#39; + disqus_shortname + &#39;.disqus.com/embed.js&#39;;
+        (document.getElementsByTagName(&#39;head&#39;)[0] || document.getElementsByTagName(&#39;body&#39;)[0]).appendChild(dsq);
+    })();
+&lt;/script&gt;
+
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot; rel=&quot;nofollow&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;
+
+</description>
+        <pubDate>Mon, 27 Apr 2015 00:00:00 -0400</pubDate>
+        <link>http://shankx50.github.io/hi-alexa</link>
+        <guid isPermaLink="true">http://shankx50.github.io/hi-alexa</guid>
+        
+        
+        <category>miscellaneous</category>
+        
+      </item>
+    
+      <item>
+        <title>Test Driven Development</title>
+        <description>&lt;p&gt;&lt;strong&gt;TDD&lt;/strong&gt; stands for &lt;strong&gt;test-driven-development&lt;/strong&gt; and it is one of the words that a junior developer will hear very often. If you are like me, then you have no idea what TDD is. You’re told that it is a good approach to creating and maintaining clean, extendable code. That’s right, but you have now idea why. Why would you have to test code that is working? Wouldn’t you just see an error if the code was not working?&lt;/p&gt;
+
+&lt;p&gt;No! You don’t test whether the syntax of your code is correct - &lt;strong&gt;you test if the LOGIC of your code is correct&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;This means that in a way, writing tests is a lot easier than writing functional code. You don’t have to write code that solves a problem - all you do is check whether existing code actually solves a given problem or not. This requires a shift of perspectives and is the main reason why new coders have trouble understanding testing.&lt;strong&gt; We are taught programming by writing solutions, not by writing tests around existing solutions.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;TDD reverses the situation. In real TDD the coder writes the &lt;strong&gt;test first&lt;/strong&gt; - then they try to write a solution that makes the test pass. There is a very important advantage in doing so. While working through the problem solving process, the coder doesn’t just focus on the programming langue. There is a more &lt;strong&gt;creativity-friendly environment&lt;/strong&gt; in his mind that allows for good solutions to come forth. It is not so easy to explain what I mean by that, but I think watching this &lt;a href=&quot;http://www.pluralsight.com/courses/play-by-play-jim-weirich&quot; target=&quot;_blank&quot;&gt;set of videos&lt;/a&gt; will help you understand. Pay attention to how &lt;a href=&quot;http://en.wikipedia.org/wiki/Jim_Weirich&quot; target=&quot;_blank&quot;&gt;Jim Weirich&lt;/a&gt; approaches solving the problem given to him.&lt;/p&gt;
+
+&lt;h2 id=&quot;unit-tests&quot;&gt;Unit tests&lt;/h2&gt;
+
+&lt;p&gt;Why are unit tests called unit tests? Because you test a unit of code - very often (not always) that is a method that takes an input and gives a single output.&lt;/p&gt;
+
+&lt;p&gt;Say you have a function that sums up two given numbers. What you test is IF you pass 2 and 7 into your function, you are ASSERTING that the outcome is equal to 9. This is essential to understanding unit tests - &lt;strong&gt;you check if a given INPUT produces the expected OUTPUT&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/unit-test.png&quot; alt=&quot;Unit test diagram&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Unit tests are the first line of defense for catching bugs, but sometimes issues come up with integration between components which can’t be captured in a unit test. End-to-end tests are made to find these problems.&lt;/p&gt;
+
+&lt;h2 id=&quot;end-to-end-tests-e2e-according-to-a-hrefhttpwwwtechopediacomdefinition7035end-to-end-test-targetblanktechopediaa&quot;&gt;End-to-end tests (E2E) according to &lt;a href=&quot;http://www.techopedia.com/definition/7035/end-to-end-test&quot; target=&quot;_blank&quot;&gt;techopedia&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;End-to-end testing involves ensuring that &lt;strong&gt;integrated components of an application function as expected&lt;/strong&gt;. The entire application is tested in a real-world scenario such as communicating with the database, network, hardware and other applications.&lt;/p&gt;
+
+&lt;p&gt;For example, a simplified end-to-end testing of an email application might involve:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Logging in to the application&lt;/li&gt;
+  &lt;li&gt;Accessing the inbox&lt;/li&gt;
+  &lt;li&gt;Opening and closing the mailbox&lt;/li&gt;
+  &lt;li&gt;Composing, forwarding or replying to email&lt;/li&gt;
+  &lt;li&gt;Logging out of the application&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The simplest way of conducting E2E tests is by just opening a browser and trying the things that need testing. Hence E2E can be done &lt;strong&gt;without writing code.&lt;/strong&gt; I imagine that beginner programmers unknowingly conduct a lot of E2E testing just because, as opposed to unit testing, is feels very natural and straightforward. Note that E2E testing is only possible when functioning units of codes exist (tested or not).&lt;/p&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot;&gt;
+&lt;/script&gt;
+
+&lt;p&gt;So in a way one can say that unit tests &lt;script type=&quot;math/tex&quot;&gt;\subset&lt;/script&gt; E2E.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;span id=&quot;math&quot;&gt;Did you see that? :) I was able to print out mathematical symbols. How cool is that?! Let’s try something fancier.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;When &lt;script type=&quot;math/tex&quot;&gt;a \ne 0&lt;/script&gt;, there are two solutions to &lt;script type=&quot;math/tex&quot;&gt;(ax^2 + bx + c = 0)&lt;/script&gt; and they are
+&lt;script type=&quot;math/tex&quot;&gt;x = {-b \pm \sqrt{b^2-4ac} \over 2a}.&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;In case you are interested, here is the markup.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;script type=&quot;text/javascript&quot;
+  src=&quot;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot;&amp;gt;
+&amp;lt;/script&amp;gt;
+
+When $$a \ne 0$$, there are two solutions to $$(ax^2 + bx + c = 0)$$ and they are
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Learn more about MathJax &lt;a href=&quot;http://docs.mathjax.org/en/latest/index.html&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;more-testing-types-found-on-a-hrefhttpenwikipediaorgwikisoftwaretesting-targetblankwikipediaa&quot;&gt;More testing types found on &lt;a href=&quot;http://en.wikipedia.org/wiki/Software_testing&quot; target=&quot;_blank&quot;&gt;wikipedia&lt;/a&gt;&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Installation testing&lt;/li&gt;
+  &lt;li&gt;Compatibility testing&lt;/li&gt;
+  &lt;li&gt;Smoke and sanity testing&lt;/li&gt;
+  &lt;li&gt;Regression testing&lt;/li&gt;
+  &lt;li&gt;Acceptance testing&lt;/li&gt;
+  &lt;li&gt;Alpha testing&lt;/li&gt;
+  &lt;li&gt;Beta testing&lt;/li&gt;
+  &lt;li&gt;Functional vs non-functional testing&lt;/li&gt;
+  &lt;li&gt;Destructive testing&lt;/li&gt;
+  &lt;li&gt;Software performance testing&lt;/li&gt;
+  &lt;li&gt;Usability testing&lt;/li&gt;
+  &lt;li&gt;Accessibility testing&lt;/li&gt;
+  &lt;li&gt;Security testing&lt;/li&gt;
+  &lt;li&gt;Internationalization and localization&lt;/li&gt;
+  &lt;li&gt;Development testing&lt;/li&gt;
+  &lt;li&gt;A/B testing&lt;/li&gt;
+  &lt;li&gt;Concurrent testing&lt;/li&gt;
+  &lt;li&gt;Conformance testing or type testing&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = &#39;shankxus&#39;;
+    var disqus_identifier = &#39;/test-driven-development&#39;;
+
+    /* * * DON&#39;T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement(&#39;script&#39;); dsq.type = &#39;text/javascript&#39;; dsq.async = true;
+        dsq.src = &#39;//&#39; + disqus_shortname + &#39;.disqus.com/embed.js&#39;;
+        (document.getElementsByTagName(&#39;head&#39;)[0] || document.getElementsByTagName(&#39;body&#39;)[0]).appendChild(dsq);
+    })();
+&lt;/script&gt;
+
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot; rel=&quot;nofollow&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;
+
+</description>
+        <pubDate>Mon, 20 Apr 2015 00:00:00 -0400</pubDate>
+        <link>http://shankx50.github.io/test-driven-development</link>
+        <guid isPermaLink="true">http://shankx50.github.io/test-driven-development</guid>
+        
+        
+        <category>programming</category>
+        
+        <category>testing</category>
+        
+      </item>
+    
+      <item>
+        <title>Object-oriented-programming vs. functional programming</title>
+        <description>&lt;p&gt;Since I have started programming I have heard coders talk about the differences between object-oriented-programming (OOP) and functional programming.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-object-oriented-programming&quot;&gt;What is object-oriented-programming?&lt;/h2&gt;
+
+&lt;p&gt;According to the book &lt;em&gt;Scala in action&lt;/em&gt; by Nilanjan Raychaudhuri, a pure object-oriented language should have the following characteristics:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Encapsulation/infromation hiding&lt;/li&gt;
+  &lt;li&gt;Inheritance&lt;/li&gt;
+  &lt;li&gt;Polymorphism/dynamic binding&lt;/li&gt;
+  &lt;li&gt;All predefined types are objects&lt;/li&gt;
+  &lt;li&gt;All operations are performed by sending messages to objects&lt;/li&gt;
+  &lt;li&gt;All user-defined types are objects&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;OOP helps the programmer to structure his/her code and its underlying concepts. Once OOP is understood, many problems can be solved by modeling problems after real world objects.&lt;/p&gt;
+
+&lt;p&gt;An object has &lt;strong&gt;states&lt;/strong&gt; and &lt;strong&gt;behavior&lt;/strong&gt; where its states are attributes and behavior is described by methods/functions linked to that object.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-functional-programming&quot;&gt;What is functional programming?&lt;/h2&gt;
+
+&lt;p&gt;…&lt;/p&gt;
+
+&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = &#39;shankxus&#39;;
+    var disqus_identifier = &#39;/oop-vs-fp&#39;;
+
+    /* * * DON&#39;T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement(&#39;script&#39;); dsq.type = &#39;text/javascript&#39;; dsq.async = true;
+        dsq.src = &#39;//&#39; + disqus_shortname + &#39;.disqus.com/embed.js&#39;;
+        (document.getElementsByTagName(&#39;head&#39;)[0] || document.getElementsByTagName(&#39;body&#39;)[0]).appendChild(dsq);
+    })();
+&lt;/script&gt;
+
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot; rel=&quot;nofollow&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;
+
+</description>
+        <pubDate>Thu, 16 Apr 2015 00:00:00 -0400</pubDate>
+        <link>http://shankx50.github.io/oop-vs-fp</link>
+        <guid isPermaLink="true">http://shankx50.github.io/oop-vs-fp</guid>
+        
+        
+        <category>programming</category>
+        
+      </item>
+    
+      <item>
+        <title>Habits of Effective People</title>
+        <description>&lt;ol&gt;
+	&lt;h1&gt;&lt;li&gt;Getting enough sleep!&lt;/li&gt;&lt;/h1&gt;
+	&lt;p&gt;Who doesn&#39;t know all nighters? Precious nocturnal hours are misused to meet a project&#39;s deadline, thinking that there is no other way to drive remaining tasks to completion. &lt;strong&gt;Sleep is important!&lt;/strong&gt; If you sleep for at least 5-7 hours per night, you can work faster and more effective because your mind is sharp and clear.&lt;/p&gt;
+
+	&lt;h1&gt;&lt;li&gt;&lt;a href=&quot;#passion&quot;&gt;Find your Passion&lt;/a&gt;&lt;/li&gt;&lt;/h1&gt;
+	&lt;p&gt;I know this one sounds a bit too clichéd, and many people frown upon this advice. However, I strongly believed in its importance. I was first introduced to the topic of true passion by the excellent author Stephen R. Covey. In his book &lt;a href=&quot;http://www.amazon.com/gp/product/1451639619/ref=as_li_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=1451639619&amp;amp;linkCode=as2&amp;amp;tag=shaponmedmas-20&amp;amp;linkId=2JX6MMPQLT5KA6RH&quot; target=&quot;_blank&quot;&gt;The 7 Habits of Highly Effective People: Powerful Lessons in Personal Change&lt;/a&gt;&lt;img src=&quot;http://ir-na.amazon-adsystem.com/e/ir?t=shaponmedmas-20&amp;amp;l=as2&amp;amp;o=1&amp;amp;a=1451639619&quot; width=&quot;1&quot; height=&quot;1&quot; border=&quot;0&quot; alt=&quot;&quot; style=&quot;border:none !important; margin:0px !important;&quot; /&gt;, he talks about finding your own passion which should be used to promote a vision you deeply care about.&lt;/p&gt;
+
+	&lt;p&gt;I found an excellent answer on Quora to the question: &lt;i&gt;How do I make money online from home?&lt;/i&gt; The respondent included a fantastic paragraph about the importance of passion.
+		&lt;blockquote&gt;To make money, either by working full-time, part-time or freelancing from home, requires that you are passionate about something. Passion trumps everything and all obstacles.&lt;/blockquote&gt; Here is the link to the &lt;a href=&quot;http://qr.ae/LXosK&quot; target=&quot;_blank&quot;&gt;full answer&lt;/a&gt;.&lt;/p&gt;
+	&lt;p&gt;Opponents of the passion idea argue that it often leads people to chase after an ideal that doesn&#39;t exist. They suggest that you should rather be more pragmatic and just meet the current demand on the job market. While this may be true from a purely financial and tactical perspective, it certainly doesn&#39;t lead to &lt;strong&gt;happiness and fulfillment&lt;/strong&gt;. It&#39;s up to you to decide what is more important to you. I suggest you allow yourself enough time to conduct some experiments. Don&#39;t just assume you like something, try it! If it turns out that you were wrong, try again! &lt;strong&gt;Be bold, fail fast and fall forward!&lt;/strong&gt;&lt;/p&gt;
+	&lt;p&gt;Trying out different things is often made impossible due to constrains we face. Therefore, it is important that you allow for an environment that grants you the necessary flexibility. Watch out not to bind yourself to impeding liabilities too early. I understand that not everyone may have that choice in life! If you do however, make sure that you are not in your own way.&lt;/p&gt;
+&lt;/ol&gt;
+
+&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = &#39;shankxus&#39;;
+    var disqus_identifier = &#39;/habits-of-effective-people&#39;;
+
+    /* * * DON&#39;T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement(&#39;script&#39;); dsq.type = &#39;text/javascript&#39;; dsq.async = true;
+        dsq.src = &#39;//&#39; + disqus_shortname + &#39;.disqus.com/embed.js&#39;;
+        (document.getElementsByTagName(&#39;head&#39;)[0] || document.getElementsByTagName(&#39;body&#39;)[0]).appendChild(dsq);
+    })();
+&lt;/script&gt;
+
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot; rel=&quot;nofollow&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;
+
+</description>
+        <pubDate>Wed, 01 Apr 2015 00:00:00 -0400</pubDate>
+        <link>http://shankx50.github.io/habits-of-effective-people</link>
+        <guid isPermaLink="true">http://shankx50.github.io/habits-of-effective-people</guid>
+        
+        
+        <category>effectivity</category>
+        
+      </item>
+    
+      <item>
+        <title>Notes for Perfectionists - or Myself</title>
+        <description>&lt;h1 id=&quot;rules&quot;&gt;Understanding the rules of the game(s)&lt;/h1&gt;
+
+&lt;p&gt;One major &lt;strong&gt;problem&lt;/strong&gt; that &lt;strong&gt;perfectionists&lt;/strong&gt; often run into is that they apply their perfectionism to every situation in life. Whether it’s school, work, or volunteering - they feel like they always have to deliver 150%. If you are like that, I have an important message for you. You have to learn &lt;strong&gt;judging&lt;/strong&gt; which situation requires what level of perfectionism! Spend time &lt;strong&gt;understanding the rules of the game&lt;/strong&gt; and try to meet these expectations. More often than not, getting the job done is all that counts, and nobody’s interested in how you got there - they care about actually getting there.&lt;/p&gt;
+
+&lt;p&gt;I promise that if you are a perfectionist, and you learn to &lt;strong&gt;adjust your level of perfectionism&lt;/strong&gt; to the needs and reality of the situation you are dealing with, a whole new world of opportunities will open up to you. Give it a try!&lt;/p&gt;
+
+&lt;p&gt;Michael Locke is a very &lt;strong&gt;inspiring&lt;/strong&gt; UI/UX designer who puts a lot of effort towards helping other people. He has a pretty awesome and affordable web design training on &lt;a href=&quot;http://www.mlwebco.com/&quot; target=&quot;_blank&quot;&gt;www.mlwebco.com&lt;/a&gt; which I can only recommend. He recorded a video in which he speaks about perfectionism. He talks about the importance of &lt;strong&gt;just putting your work out there&lt;/strong&gt;, without being afraid that it may not be good enough. That is knowing the rules of the game. Michael learned that you can get great job offers and projects by showing what you know.&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;&lt;iframe min-width=&quot;20%&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/p5maTDZNkn0?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;measuring&quot;&gt;Choosing your measuring stick&lt;/h1&gt;
+
+&lt;p&gt;I get it like no one else - trust me. You &lt;strong&gt;want to be perfect&lt;/strong&gt; and you &lt;strong&gt;compare yourself&lt;/strong&gt; to people you admire. You most likely have a mentor, a colleague, or a technical author you highly respect.&lt;/p&gt;
+
+&lt;p&gt;If you are like me, you tend to compare yourself to these people, and you end up being &lt;strong&gt;somewhat frustrated&lt;/strong&gt; when you realize that your role models are far ahead of you. What you forget is that you are comparing yourself to people who probably have a bunch of years &lt;strong&gt;more experience&lt;/strong&gt; than you. How &lt;strong&gt;fair&lt;/strong&gt; are you to yourself? Would you expect a high school student to be better at mathematics than a PhD student? Probably not. So &lt;strong&gt;give yourself a break&lt;/strong&gt; and &lt;strong&gt;accept who you are&lt;/strong&gt;. Keeping working diligently and &lt;strong&gt;you will get where you need to be&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;embrace&quot;&gt;Embrace who you are&lt;/h1&gt;
+
+&lt;p&gt;Why do perfectionists often feel like having to tame their perfectionism? After all, they likes perfection, so why would they want to fight it? Living beings tend to dislike pain, whatever pain may mean to them. &lt;strong&gt;Feeling stupid&lt;/strong&gt; is a pain that many perfectionists &lt;strong&gt;fear&lt;/strong&gt; precisely because they love perfection. Thus, they frequently become a &lt;strong&gt;hindrance to themselves&lt;/strong&gt; when confronted with their own (relative) imperfection. There are two simple steps that help breaking out of the vicious circle:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Accept that &lt;strong&gt;you are infinitely unknowledgeable&lt;/strong&gt;. Knowledge knows no boundaries, hence you will always remain pretty vacuous.&lt;/li&gt;
+
+&lt;li&gt;&lt;strong&gt;Stop caring&lt;/strong&gt; about what &lt;strong&gt;you think&lt;/strong&gt; about yourself. Picture another dimension of yourself, and just let that being do its thing. As long as it is happy, what’s the harm?&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Stop caring&lt;/strong&gt; about what &lt;strong&gt;other people&lt;/strong&gt; think since most will never get you....and they don&#39;t need to either.&lt;/li&gt;&lt;/ol&gt;
+
+&lt;p&gt;You may want to swap the term &lt;i&gt;perfectionist&lt;/i&gt; with the word &lt;i&gt;geek&lt;/i&gt;, if you consider yourself to be one.&lt;/p&gt;
+
+&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = &#39;shankxus&#39;;
+    var disqus_identifier = &#39;/notes-for-perfectionists&#39;;
+
+    /* * * DON&#39;T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement(&#39;script&#39;); dsq.type = &#39;text/javascript&#39;; dsq.async = true;
+        dsq.src = &#39;//&#39; + disqus_shortname + &#39;.disqus.com/embed.js&#39;;
+        (document.getElementsByTagName(&#39;head&#39;)[0] || document.getElementsByTagName(&#39;body&#39;)[0]).appendChild(dsq);
+    })();
+&lt;/script&gt;
+
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot; rel=&quot;nofollow&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;
+
+</description>
+        <pubDate>Tue, 31 Mar 2015 00:00:00 -0400</pubDate>
+        <link>http://shankx50.github.io/notes-for-perfectionists</link>
+        <guid isPermaLink="true">http://shankx50.github.io/notes-for-perfectionists</guid>
+        
+        
+        <category>perfectionist</category>
+        
+      </item>
+    
+  </channel>
+</rss>

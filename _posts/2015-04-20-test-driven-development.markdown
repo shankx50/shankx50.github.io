@@ -24,7 +24,19 @@ Say you have a function that sums up two given numbers. What you test is IF you 
 
 Unit tests are the first line of defense for catching bugs, but sometimes issues come up with integration between components which can't be captured in a unit test. End-to-end tests are made to find these problems.
 
+<h3 id="mocking">Please, mock me!</h3>
+
+As so often in programming, it helps understanding concepts by first looking at their literal meaning. ***Mocking and unit testing go hand in hand.*** Simple unit testing may rely on a function alone, but you will see that you will quickly have to mock dependencies. ***So what is mocking?*** The dictionary says : <q>...arranged for training or practice, or performed as a demonstration...</q> We arrange, orchestrate, or mimic situations in which we want our code to behave in a certain way. We are fooling the code to believe that it lives in a certain environment.
+
+Let's look at a very practical example. You may have a block of code that takes a list and sorts it in alphabetical order. Sorting the list correctly is the logic you want to test. Now you need to get that list from somewhere. You could just hard-code it in your test - and that's fine depending on what your test needs to achieve. However, it is very likely that your function gets the list from an external resource. Say you want a list of 10 names, then you could call this <a href="http://www.filltext.com/?rows=10&fname={firstName}&lname={lastName}&pretty=true" target="_blank">external resource</a>. If you just clicked on the link, you saw that the friendly people of <a href="http://www.filltext.com" target="_blank">www.FillText.com</a> provide this free service for development needs.
+
+Can we use this service to arrange our test then? We could, but it is ***good practice*** to have ***tests that do not depend on external resources***. What if *FillText* were to discontinue their services? What if you have the power to unintentionally break that external resource? That's why you want to ***make your tests independent*** by mocking/faking that resource within the test. Basically you have to create your own *FillText* that returns the list to the code you want to test. How this is done is a more advance topic that goes beyond the scope of this post. But I do want you to understand what mocking is, and why it is important and even necessary to write good unit tests.
+
+I have only worked with mocks within Angular and I have seen that <a href="https://docs.angularjs.org/api/ngMock/service/$httpBackend" target="_blank">$httpBackend</a> is one option to mock such a resource. Again, that's only one option!
+
+
 ##End-to-end tests (E2E) according to <a href="http://www.techopedia.com/definition/7035/end-to-end-test" target="_blank">techopedia</a>
+
 
 End-to-end testing involves ensuring that **integrated components of an application function as expected**. The entire application is tested in a real-world scenario such as communicating with the database, network, hardware and other applications.
 
