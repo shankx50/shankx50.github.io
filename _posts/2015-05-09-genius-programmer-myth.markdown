@@ -15,7 +15,7 @@ As a perfectionist, an extremely driven and ambitious programmer the topic I am 
 
 ##Embrace Failure
 
-We need to learn that **failure is good**. We learn by failing. Programming techniques and tools (e.g. version control) lend themselves to pretending that every programmer out there is almost perfect. That is understandable since most coders have a tendency to only publish finalized code. But let me ask you - how much time to you think that other programmers spend debugging and problem-soliving? They all do! Don't get me wrong, I am not saying that seasoned programmers don't work faster as novices, because they do. The point is that **they all struggle, and they all fail over and over again**. But again, don't take it from me - take it from people who should know.
+We need to learn that **failure is good**. We learn by failing. Programming techniques and tools (e.g. version control) lend themselves to pretending that every programmer out there is almost perfect. That is understandable since most coders have a tendency to only publish finalized code. But let me ask you - how much time to you think that other programmers spend debugging and problem-solving? They all do! Don't get me wrong, I am not saying that seasoned programmers don't work faster as novices, because they do. The point is that **they all struggle, and they all fail over and over again**. But again, don't take it from me - take it from people who should know.
 
 <div style="text-align:center;"><iframe height="315" src="https://www.youtube.com/embed/0SARbwvhupQ?rel=0" frameborder="0" allowfullscreen></iframe></div>
 
