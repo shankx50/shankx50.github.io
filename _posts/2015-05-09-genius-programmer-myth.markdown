@@ -9,7 +9,7 @@ permalink: /genius-programmer-myth
 
 ##Stay Hungry - Stay Foolish
 
-As a perfectionist, an extremely driven and ambitious programmer the topic I am about to discuss is of paramount importance. I often wonder how much time I waste thinking about how good I want to be, how good I am, and what I have to do to reach my goals. Human beings don't like to feel stupid. The problem with being a programmer is that you need to get used to that feeling. Being stupid, not knowing and finding out is what defines a programmer. It also is part of what makes programming so interesting. **You can never know it all**. In Steve Jobs' words at the *2005 Stanford Commmencement Address* : **<q>Stay hungry - Stay foolish</q>**.
+As a perfectionist, an extremely driven and ambitious programmer the topic I am about to discuss is of paramount importance. I often wonder how much time I waste thinking about how good I want to be, how good I am, and what I have to do to reach my goals. Human beings don't like to feel stupid. The problem with being a programmer is that you need to get used to that feeling. Being stupid, not knowing and finding out is what defines a programmer. It also is part of what makes programming so interesting. **You can never know it all**. In Steve Jobs' words at the *2005 Stanford Commencement Address* : **<q>Stay hungry - Stay foolish</q>**.
 
 <div style="text-align:center;"><iframe height="315" src="https://www.youtube.com/embed/UF8uR6Z6KLc?rel=0" frameborder="0" allowfullscreen></iframe></div>
 
