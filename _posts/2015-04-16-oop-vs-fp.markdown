@@ -5,7 +5,7 @@ date:   2015-04-16
 categories: programming
 permalink: /oop-vs-fp
 ---
-
+{% include stupid.html %}
 Since I have started programming I have heard coders talk about the differences between object-oriented-programming (OOP) and functional programming.
 
 ## What is object-oriented-programming?

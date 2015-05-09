@@ -5,7 +5,7 @@ date:   2015-03-31
 categories: perfectionist
 permalink: /notes-for-perfectionists
 ---
-
+{% include stupid.html %}
 <h1 id="rules">Understanding the rules of the game(s)</h1>
 
 One major <strong>problem</strong> that <strong>perfectionists</strong> often run into is that they apply their perfectionism to every situation in life. Whether it's school, work, or volunteering - they feel like they always have to deliver 150%. If you are like that, I have an important message for you. You have to learn <strong>judging</strong> which situation requires what level of perfectionism! Spend time <strong>understanding the rules of the game</strong> and try to meet these expectations. More often than not, getting the job done is all that counts, and nobody's interested in how you got there - they care about actually getting there.
