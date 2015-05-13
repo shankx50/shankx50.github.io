@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Programming
-date:   2015-04-16
+date:   2015-05-12
 permalink: /programming/
 ---
 <p>Last update: {{ page.date | date: "%b %-d, %Y" }}</p>
@@ -19,5 +19,4 @@ permalink: /programming/
 3. What is a finite state machine?
 4. What is an Immediately-Invoked Function Expression (IIFE)
 5. [Object-oriented-programming and functional programming](/oop-vs-fp)
-
-{% include disqus.html %}
+6. [The Importance of Interfaces](/interfaces)

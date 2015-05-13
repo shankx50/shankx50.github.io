@@ -19,5 +19,3 @@ Online courses completed:
 </li>
 
 </ul>
-
-{% include disqus.html %}
