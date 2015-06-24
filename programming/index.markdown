@@ -15,8 +15,9 @@ permalink: /programming/
 </p>
 
 1. [Testing and Test-Driven-Development (TDD)](/test-driven-development)
-2. What programming language should I use?
-3. What is a finite state machine?
-4. What is an Immediately-Invoked Function Expression (IIFE)
-5. [Object-oriented-programming and functional programming](/oop-vs-fp)
-6. [The Importance of Interfaces](/interfaces)
+2. [Discovering SSH Keys](/ssh)
+3. What programming language should I use?
+4. What is a finite state machine?
+5. What is an Immediately-Invoked Function Expression (IIFE)
+6. [Object-oriented-programming and functional programming](/oop-vs-fp)
+7. [The Importance of Interfaces](/interfaces)

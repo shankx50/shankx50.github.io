@@ -1,0 +1,44 @@
+---
+layout: post
+title:  "Discovering SSH keys"
+date:   2015-06-24
+categories: programming
+permalink: /ssh
+---
+{% include stupid.html %}
+
+There comes a time for any developer when he needs to understand what **SSH** is. I was pretty much able to get around it until today. I have to set up an automated backup process between a hosting provider and a cloud-based backup service. The backup service uses **SFTP** - Secure File Transfer Protocol using SSH - secure shell. The hosting provider does not allow general access to the database which the backup service wants to access. I got in touch with the hosting company and here's what they responded to me:
+
+***<q>Please send us your public SSH RSA key, and we can begin the process of providing SSH access.</q>***
+
+The backup service provider gave be the following directions:
+
+***<q>You will find the option to upload your key here:...Please make sure that the key you upload is not encrypted - we will encrypt it on our servers for you.</q>***
+
+Okay, it was time to do some research on SSH keys. These to resources provided all the answers I was looking for:
+
+1. <a href="https://wiki.archlinux.org/index.php/Secure_Shell" target="_blank">https://wiki.archlinux.org/index.php/Secure_Shell</a>
+2. <a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2" target="_blank">https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2</a>
+
+But here is a quick summary:
+
+- There is a public and a private key which are long strings.
+- You can place the **public key on any server**, and then unlock it by connecting to it with a **client** that already **has the private key**.
+- You can **passphrase-protected a private key** which makes it even more secure.
+
+To refer back to my situation:
+
+The public key should be placed on the hosting provider's machine and the private key should be placed on the database server. So the private key is the more restrictive component here. I like to think of it more as a key and a lock where the public key represents a key you give to a guest who is using your house temporarily and the private key is your lock. The optional passphrase is a way to modify your lock since it is possible to change the passphrase. Isn't that nice? You can either change the lock, modify it, or do both. Anyhow, I am derailing here...Moreover the backup service provider asked me not to passphrase-protect my private key.
+
+##Now, here is the question of the day (06/24/15): Can I create an SSH key pair on a given computer, to be used by two other machines?
+
+That question is legit, right? After all, in my situation I have no way to log on the hosting provider's server and generate a key pair.
+
+So I am just gonna give it a try. I will use my personal computer to create the key pair and then I will move the public key to the backup service and the private key to the hosting provider. A bad feeling tells me that there may be permission issues with these files...? But that is another can of worms that I'll open when I have to.
+
+
+I will keep you posted, but I would love any advice here. Let's see who can figure this out sooner :) My readership or I.
+
+
+
+{% include disqus.html %}
