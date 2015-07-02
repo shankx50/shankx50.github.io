@@ -12,6 +12,7 @@ permalink: /rails/
 ##Miscellanea
 
 - The layout can be ignored by putting **layout false** into the controller.
+- Any instance variables we define in a method of a controller become available for use in the views.
 
 ##Hosting
 
