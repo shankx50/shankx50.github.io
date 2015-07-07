@@ -14,10 +14,10 @@ permalink: /programming/
 	Below is a list of topics that I intend to write about in more detail.
 </p>
 
-1. [Testing and Test-Driven-Development (TDD)](/test-driven-development)
-2. [Discovering SSH Keys](/ssh)
-3. What programming language should I use?
-4. What is a finite state machine?
-5. What is an Immediately-Invoked Function Expression (IIFE)
-6. [Object-oriented-programming and functional programming](/oop-vs-fp)
-7. [The Importance of Interfaces](/interfaces)
+- [Testing and Test-Driven-Development (TDD)](/test-driven-development)
+- [Discovering SSH Keys](/ssh)
+- What programming language should I use?
+- What is a finite state machine?
+- What is an Immediately-Invoked Function Expression (IIFE)
+- [Object-oriented-programming and functional programming](/oop-vs-fp)
+- [The Importance of Interfaces](/interfaces)
