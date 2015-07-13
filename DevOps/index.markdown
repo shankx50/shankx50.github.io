@@ -10,3 +10,4 @@ permalink: /devops/
 
 ---
 - [Deployment Best Practices](/deployment)
+- [Smart Syncing with lftp](/lftp)

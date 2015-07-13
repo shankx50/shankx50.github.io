@@ -1,0 +1,30 @@
+---
+layout: post
+title:  "Smart Syncing via FTP(S)"
+date:   2015-07-13
+categories: devops
+permalink: /lftp
+---
+{% include stupid.html %}
+
+More often than not all you really need to get the job done is a static website. Yes, I mean it. Even if the client wants to be able to make simple edits, tools such as <a href="http://www.cushycms.com" target="_blank">CushyCMS</a> can be used.
+
+For a very low budget one can get hosting for $2 - $4 a month, often with unlimited disk space, traffic and databases. I have always found it a painful process to push updates to those shared hosting accounts. I used FileZILLA to drag and drop my files over via FTP(S).
+
+Fortunately, I recently discovered a nifty command line application called lftp. lftp is a great file transfer program that even recognizes files changes, so there is no need to always transfer an entire directory.
+
+Here is a quick example of how I use lftp to connect to the shared hosting account.
+
+    lftp ftp.example.com
+
+    lftp ftp.example.com: ~> user username password
+
+    lftp ftp.example.com: ~> mirror -R --exclude .git/ --exclude .gitignore
+
+That's it. Pretty simple, quick and it works great. By the way, the -R flag transfers local files to the remote account. Without that flag, lftp mirrors the remote content to your local folder.
+
+Please note that FTP is by no means a secure way to transfer data. If you need to transfer confidential information make sure to use FTPS (FTP over SSL), or even better SFTP(SSH File Transfer Protocol).
+
+Let me know how it goes for you.
+
+{% include disqus.html %}
