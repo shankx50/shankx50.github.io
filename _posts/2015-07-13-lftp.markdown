@@ -11,9 +11,9 @@ More often than not all you really need to get the job done is a static website.
 
 For a very low budget one can get hosting for $2 - $4 a month, often with unlimited disk space, traffic and databases. I have always found it a painful process to push updates to those shared hosting accounts. I used FileZILLA to drag and drop my files over via FTP(S).
 
-Fortunately, I recently discovered a nifty command line application called lftp. lftp is a great file transfer program that even recognizes files changes, so there is no need to always transfer an entire directory.
+Fortunately, I recently discovered a nifty command line application called lftp. lftp is a great file transfer application that even recognizes file changes, so there is no need to always transfer an entire directory.
 
-Here is a quick example of how I use lftp to connect to the shared hosting account.
+Here is a quick example of how I use lftp to connect to a shared hosting account.
 
     lftp ftp.example.com
 
