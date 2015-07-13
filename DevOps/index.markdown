@@ -1,7 +1,7 @@
 ---
 layout: page
 title: DevOps
-date:   2015-07-07
+date:   2015-07-13
 permalink: /devops/
 ---
 <p>Last update: {{ page.date | date: "%b %-d, %Y" }}</p>
