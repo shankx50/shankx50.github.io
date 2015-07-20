@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Ruby On Rails
-date:   2015-07-12
+date:   2015-07-20
 permalink: /rails/
 ---
 <p>Last update: {{ page.date | date: "%b %-d, %Y" }}</p>
@@ -21,6 +21,7 @@ In Rails 4.1 the secrets.yml in the config folder stores the application's sensi
 
 - The layout can be ignored by putting **layout false** into the controller.
 - Any instance variables we define in a method of a controller become available for use in the views.
+- <%= 'active' if current_page?(root_path) %> does exactly what you expect it to do.
 
 ##Hosting
 
