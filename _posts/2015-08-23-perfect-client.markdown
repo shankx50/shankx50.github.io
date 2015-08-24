@@ -25,9 +25,9 @@ If you don't know where you are heading to, then you can't be organized. Tell pe
 
 - People who want everything as fast as possible:
 
-Reasonable deadlines are ok. Deadlines that challenge you are ok, too. But someone who expects everyone ASAP doesn't understand that quality matters. I am not saying take forever, I am saying take the time it needs to make it right.
+Reasonable deadlines are ok. Deadlines that challenge you are ok, too. But someone who expects everything ASAP doesn't understand that quality matters. I am not saying take forever, I am saying take the time it needs to make it right.
 
-- arrogance, greed, stupidity and jealousy
+- arrogance, greed and jealousy
 
 - People who use condescending language when talking about others.
 
