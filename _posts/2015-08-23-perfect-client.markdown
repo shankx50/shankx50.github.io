@@ -7,6 +7,8 @@ permalink: /perfect-client
 ---
 {% include stupid.html %}
 
+![Top Five Qualities I Seek In My Clients](/assets/perfect_client.png)
+
 It is extremely important to create an environment allowing you to work with people you appreciate - that includes your clients. Not only will you feel more energized, you will also become an exclusive resource because you choose to not work with anyone who is willing to write you a check. Learn to say no to people you don't like to work with.
 
 Describing the perfect client starts with describing features in people that turn you off.
