@@ -8,7 +8,7 @@ permalink: /swift/
 SWIFT is the language to learn if you are interested in iOS development. Here are my notes:
 <br/>
 
-- strongly typed, but compiler infers the type - hover over to have IDE show actual type
+- strongly typed, but compiler infers the type. Hover over to have IDE show actual type
 - no semi-colons at the end of expressions
 - use key word ***let*** for constants and ***var*** for all other variables
 - variables can't be ***nil*** unless you explicitly type them as ***optional*** like shown below
