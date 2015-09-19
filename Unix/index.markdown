@@ -1,71 +1,81 @@
 ---
 layout: page
-title: Unix
-date:   2015-09-14
-permalink: /unix/
+title: SWIFT
+date:   2015-09-18
+permalink: /swift/
 ---
 <p>Last update: {{ page.date | date: "%b %-d, %Y" }}</p>
-There's no serious web development without using UNIX commands and the command line. Daunting at the beginning, the command line quickly becomes every programmer's best friend.
-
----
+SWIFT is the language to learn if you are interested in iOS development. Here are my notes:
 <br/>
 
-### Navigation
+- strongly typed, but compiler infers the type | hover over to have IDE show actual type
+- no semi-colons at the end of expressions
+- use key word ***let*** for constants and ***var*** for all other variables
+- variables can't be ***nil*** unless you explicitly type them as ***optional*** like shown below
 
--  <q>cd -</q> gets you back to the previous directory.
+      var str: String?
 
-### File creation
+- control structures
 
-- touch
 
-### File editing
+      for counter in 0..<10{
+        if counter != 5{
+          print(counter)
+        }
+      }
 
-- nano
+- switch cases in SWIFT do not fall through
 
-### File reading
+- simple arrays
 
-- cat (concatenation of more small files)
-- less (larger files)
-- head (displays beginning of file)
-- tail -f (displays the end of a file) -f: follows the file for updates
+      var cars = ["Buick","Chevy","Ford"]
+      cars[1] = "Dodge"
 
-### Create directory
+      for car in cars{
 
-- mkdir, use option -p if parent directory already exists
+      }
 
-### Move and renaming files/directories
+- 2D arrays
 
-- mv filename/directory relative or absolute path
-- also use mv for renaming files since rename command is unreliable
-- -n no overwriting
-- -f force overwriting (attention default mode)
-- -i interactive mode (gives you options)
-- -v verbose
+      var beautifulImage =[
+        [3,15,2],
+        [2,33,4],
+        [23,32,32]
+      ]
 
-### Copying files
+      for i in 0..<beautifulImage.count{
+        for j in 0..<beautifulImage[i].count{
+          if beautifulImage[i][j] < 5{
+            beautifulImage[i][j] = 5
+          }
+        }
+      }
 
-- cp source destination_path (same options as mv)
-- cp -R for whole directories (recursive copy)
 
-### Delete files/directories
 
-- rm file; -R (recursive option)
-- rmdir directory (only for empty directories)
+- hashes, maps, key-value pairs, in iOS Dictionaries
 
-### Hard links
+      var speed = [
+        "Buick":"slow",
+        "Dodge":"medium",
+        "Ford":"fast"
+      ]
+      speed["Dodge"]
 
-Makes a reference to a file in the file system (just like any listed file name if you think about it)
+- basic functions
 
-- ln filetolink hardlink
-- Do not break if file is deleted/moved
+      func funcName(type: String) -> String {
+        return "car"
+      }
 
-### Symbolic links
+      func funcName(type: String = "default String", price: Int) -> String {
+        return "car"
+      }
 
-- ln -s filetolink symlinkname
-- symbolic links reference the path, not the file itself (like the hard link)
+      // subsequent parameters must be named when calling functions
+      funcName("Buick", price: 1000)
 
-### Searching
 
-- find path expression ex. find ~/Documents -name "something.jpg"
-- can use wildcard characters (\*,?,[])
-- check out man find since this is a very powerful command
+
+- curly braces define a closure(function)
+- use keyword ***inout*** in function signature when passing variables into functions and we want that the original variable passed in is modified by the function, not a copy. In this case we need to prepend an & to the variable passed in, when calling the function
