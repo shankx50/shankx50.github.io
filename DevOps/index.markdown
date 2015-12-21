@@ -11,3 +11,4 @@ permalink: /devops/
 ---
 - [Deployment Best Practices](/deployment)
 - [Smart Syncing with lftp](/lftp)
+- [Running Ubuntu on a mac](/local-ubuntu-server)
