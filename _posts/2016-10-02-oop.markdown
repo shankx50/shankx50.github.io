@@ -1,0 +1,83 @@
+---
+layout: post
+title:  "Object Oriented Design"
+date:   2016-10-02
+categories: programming
+permalink: /ood
+---
+I am writing this blog post to solidify <strong>coding principles</strong> that are essential when writing software. The post is largely based on Sandi Metz' excellent book <a href="https://www.amazon.com/gp/product/0321721330/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0321721330&amp;linkCode=as2&amp;tag=shaponmedmas-20&amp;linkId=79779add8e2b95d39799cda48d7a0dcd">Practical Object-Oriented Design in Ruby: An Agile Primer (Addison-Wesley Professional Ruby)</a>.
+
+As a novice programmer, we write code in order to achieve goals. If the code does what we need it to do, we are happy. However, a more experienced developer needs to start thinking about <strong>code organization</strong> and here is why:
+<ul>
+ 	<li>Keep code DRY</li>
+ 	<li>Allow applications to scale</li>
+ 	<li>Allow applications to remain nimble and extendable</li>
+ 	<li>Deliver great value to clients</li>
+</ul>
+A very popular way of organizing code nowadays is described by <strong>Object Oriented Design (OOD) Principles. </strong>In OOD, we try to think of applications and logic as real work objects. Objects have <strong>data</strong> and <strong>behavior, </strong>where <span style="text-decoration: underline;">data is represented</span> by variables and <span style="text-decoration: underline;">behavior by methods/functions</span>.
+<blockquote>OOD is about <em>managing dependencies</em>. It is a set of coding techniques that arrange dependencies such that objects can <strong>tolerate change.</strong> In the absence of design,....objects know too much about one another. - Sandi Metz</blockquote>
+<h2><span style="text-decoration: underline;">The Single Responsibility Principle (cohesiveness)</span></h2>
+<ul>
+ 	<li>A class should do the smallest possible useful thing; it should have a single responsibility.</li>
+ 	<li>Reusable classes are <strong>pluggable </strong>units of well-defined behavior that have <strong>few entanglements.</strong></li>
+</ul>
+<h3>Depend on Behavior, Not Data</h3>
+Why? Because <strong>data is referenced and behavior is defined</strong>. In other words, data is passive and behavior is active. If instance variables are wrapped in a method, we can easily change what that variable means, <strong>by changing code in one place only</strong>.
+<ul>
+ 	<li>Always wrap instance variables in accessor methods (<a href="http://stackoverflow.com/questions/5046831/why-use-rubys-attr-accessor-attr-reader-and-attr-writer" target="_blank">http://stackoverflow.com/questions/5046831/why-use-rubys-attr-accessor-attr-reader-and-attr-writer</a>).</li>
+ 	<li>You should hide data from yourself.</li>
+ 	<li>Send messages to access data (by using a method call), even if you think of them as data.</li>
+</ul>
+<h3>Hide Data Structures</h3>
+In Ruby it's easy to separate structure from meaning. Just as you can use a method to wrap an instance variable, you can use the Ruby <em>Struct</em> class to wrap a structure. A Struct is a convenient way to bundle a number of attributes together, using accessor methods, without having to write an explicit class. What you actually want when you write code is use <strong>meaningful messages vs. assuming to know the structure of a data collection.</strong> Why? Because:
+<ul>
+ 	<li>When the data collection structure changes, adjustment needs to happen in only on place.</li>
+ 	<li>We don't want our code to need knowledge about the structure of the data its using. That is a huge assumption to make.</li>
+</ul>
+<h2><span style="text-decoration: underline;">Managing Dependencies</span></h2>
+A dependency is a situation where an object needs to know too much about another object in order to send meaningful messages to each other. The problem is that when two or more objects are so tightly coupled (CBO - coupling of objects) that they behave as a unit, it's impossible to reuse just one.
+<h3>Injecting Dependencies</h3>
+Dependency injection relies on the technique of writing objects that are flexible enough to accept the injection of other objects in order to perform their tasks.
+
+To give you a real world example: If we had a car that would only run on Shell fuel, then our car object would be too rigid. A better car object is an object that runs on any fuel, no matter who produced it. As long as the fuel object burns according to the engine specs, the car should drive.
+<h4>Isolate Instance Creation</h4>
+There are different we can inject a dependency into a class. It is helpful to think of every dependency as a bacterium that you want to isolate. Just as society avoids and isolates dangerous people, dependencies should also be isolated.
+<pre>
+def gear_inches
+ ratio * wheel.diameter
+end
+
+def wheel
+ @wheel || = Wheel.new(rim, tire)
+end
+</pre>
+<h4>Isolate Vulnerable External Messages</h4>
+The <code>gear_inches</code> method still combines logic that belongs to two different concepts, gear and wheel. It is better to isolate the diameter message into its own method:
+<pre>
+def gear_inches
+ ratio * diameter
+end
+
+def wheel
+ @wheel || = Wheel.new(rim, tire)
+end
+
+def diameter
+ wheel.diameter
+end</pre>
+
+###Remove Argument-Order Dependencies
+
+This is a problem that I recently created in an application where I had a <code>class Pet</code> with a filter method allowing a series of arguments.
+
+1. species
+2. age
+3. gender
+
+If I want a young German Shepherd, I need to pass in:
+
+    Pet.filer(species_id, age, gender_id)
+
+Whenever I don't care about a specific argument, I have to pass in <code>nil</code> to avoid a missing argument error. On top of having to pass in three arguments, I also have to make sure that they are in correct order.
+
+{% include disqus.html %}
