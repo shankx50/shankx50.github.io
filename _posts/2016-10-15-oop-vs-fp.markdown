@@ -1,0 +1,36 @@
+---
+layout: post
+title:  "Object-oriented-programming vs. functional programming"
+date:   2016-10-15
+categories: programming
+permalink: /oop-vs-fp
+---
+{% include stupid.html %}
+Since I have started programming I have heard coders talk about the differences between object-oriented-programming (OOP) and functional programming.
+
+## What is <a href='/ood'>object-oriented-programming</a>?
+
+According to the book _Scala in action_ by Nilanjan Raychaudhuri, a pure object-oriented language should have the following characteristics:
+
+* Encapsulation/information hiding
+* Inheritance
+* Polymorphism/dynamic binding
+* All predefined types are objects
+* All operations are performed by sending messages to objects
+* All user-defined types are objects
+
+OOP helps the programmer to structure his/her code and its underlying concepts. Once OOP is understood, many problems can be solved by modeling problems after real world objects.
+
+An object has **states** and **behavior** where its states are attributes and behavior is described by methods/functions linked to that object.
+
+I write more about Object-Oriented-Design [here](/ood)
+
+## What is functional programming?
+
+Functional programming languages emphasize rules and pattern-matching. While they appear non-intuitive to those who have only experienced procedural languages, they provide succinct and natural programming structures for those who gain some experience.
+
+## What is procedural programming?
+
+Procedural programming is characterized by having data stored in variables, which are operated on by lists of instructions. Each instruction, or list of instructions can create, destroy, or modify the data, yet the data always remains somehow separate from the program code. _Teach Yourself Javascript_ by Pil Ballard and Michael Moncur.
+
+{% include disqus.html %}
