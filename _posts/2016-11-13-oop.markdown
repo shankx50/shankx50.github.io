@@ -73,7 +73,7 @@ def diameter
  wheel.diameter
 end</pre>
 
-###Remove Argument-Order Dependencies
+### Remove Argument-Order Dependencies
 
 This is a problem that I recently created in an application where I had a <code>class Pet</code> with a filter method allowing a series of arguments.
 
