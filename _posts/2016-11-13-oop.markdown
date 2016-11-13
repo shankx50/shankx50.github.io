@@ -1,19 +1,24 @@
 ---
 layout: post
 title:  "Object Oriented Design"
-date:   2016-10-16
+date:   2016-11-13
 categories: programming
 permalink: /ood
 ---
-I am writing this blog post to solidify <strong>coding principles</strong> that are essential when writing software. The post is largely based on Sandi Metz' excellent book <a href="https://www.amazon.com/gp/product/0321721330/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0321721330&amp;linkCode=as2&amp;tag=shaponmedmas-20&amp;linkId=79779add8e2b95d39799cda48d7a0dcd">Practical Object-Oriented Design in Ruby: An Agile Primer (Addison-Wesley Professional Ruby)</a>.
+I am writing this educational blog post to solidify <strong>coding principles</strong> that are essential when writing software. The post is largely based on Sandi Metz' excellent book <a href="https://www.amazon.com/gp/product/0321721330/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0321721330&amp;linkCode=as2&amp;tag=shaponmedmas-20&amp;linkId=79779add8e2b95d39799cda48d7a0dcd">Practical Object-Oriented Design in Ruby: An Agile Primer (Addison-Wesley Professional Ruby)</a>. **I do not claim any credits for its ideas and outlined principles**.
 
-As a novice programmer, we write code in order to achieve goals. If the code does what we need it to do, we are happy. However, a more experienced developer needs to start thinking about <strong>code organization</strong> and here is why:
+As novice programmers, we write code in order to achieve goals. If the code does what we need it to do, we are happy. Beginners also have a tendency to write code that leans toward functional/procedural programming patterns. While the latter has its place in programming, this article assumes an object-oriented approach.
+
+A more experienced developer needs to start thinking about <strong>code organization</strong> and here is why:
+
 <ul>
  	<li>Keep code DRY</li>
  	<li>Allow applications to scale</li>
  	<li>Allow applications to remain nimble and extendable</li>
  	<li>Deliver great value to clients</li>
 </ul>
+
+
 A very popular way of organizing code nowadays is described by <strong>Object Oriented Design (OOD) Principles. </strong>In OOD, we try to think of applications and logic as real work objects. Objects have <strong>data</strong> and <strong>behavior, </strong>where <span style="text-decoration: underline;">data is represented</span> by variables and <span style="text-decoration: underline;">behavior by methods/functions</span>.
 <blockquote>OOD is about <em>managing dependencies</em>. It is a set of coding techniques that arrange dependencies such that objects can <strong>tolerate change.</strong> In the absence of design,....objects know too much about one another. - Sandi Metz</blockquote>
 <h2><span style="text-decoration: underline;">The Single Responsibility Principle (cohesiveness)</span></h2>
@@ -29,20 +34,22 @@ Why? Because <strong>data is referenced and behavior is defined</strong>. In oth
  	<li>Send messages to access data (by using a method call), even if you think of them as data.</li>
 </ul>
 <h3>Hide Data Structures</h3>
-In Ruby it's easy to separate structure from meaning. Just as you can use a method to wrap an instance variable, you can use the Ruby <em>Struct</em> class to wrap a structure. A Struct is a convenient way to bundle a number of attributes together, using accessor methods, without having to write an explicit class. What you actually want when you write code is use <strong>meaningful messages vs. assuming to know the structure of a data collection.</strong> Why? Because:
+In Ruby it's easy to separate structure from meaning. Just as you can use a method to wrap an instance variable, you can use the Ruby <em>[Struct](https://ruby-doc.org/core-2.2.0/Struct.html)</em> class to wrap a structure. A Struct is a convenient way to bundle a number of attributes together, using accessor methods, without having to write an explicit class. What you actually want when you write code is use <strong>meaningful messages vs. assuming to know the structure of a data collection.</strong> Why? Because:
 <ul>
  	<li>When the data collection structure changes, adjustment needs to happen in only on place.</li>
  	<li>We don't want our code to need knowledge about the structure of the data its using. That is a huge assumption to make.</li>
 </ul>
 <h2><span style="text-decoration: underline;">Managing Dependencies</span></h2>
-A dependency is a situation where an object needs to know too much about another object in order to send meaningful messages to each other. The problem is that when two or more objects are so tightly coupled (CBO - coupling of objects) that they behave as a unit, it's impossible to reuse just one.
+A unhealthy dependency is a situation where an object needs to know too much about another object in order to send meaningful messages to each other. The problem is that when two or more objects are so tightly coupled (CBO - coupling of objects) that they behave as a unit, it's impossible to reuse just one.
 <h3>Injecting Dependencies</h3>
 Dependency injection relies on the technique of writing objects that are flexible enough to accept the injection of other objects in order to perform their tasks.
 
-To give you a real world example: If we had a car that would only run on Shell fuel, then our car object would be too rigid. A better car object is an object that runs on any fuel, no matter who produced it. As long as the fuel object burns according to the engine specs, the car should drive.
+To give you a real world example: If we had a car that would run only on Shell fuel, then our car object would be too rigid. A better car object is an object that runs on any fuel, no matter who produced it. As long as the fuel object burns according to the engine specs, the car should drive.
 <h4>Isolate Instance Creation</h4>
-There are different we can inject a dependency into a class. It is helpful to think of every dependency as a bacterium that you want to isolate. Just as society avoids and isolates dangerous people, dependencies should also be isolated.
+There are different ways we can inject a dependency into a class. It is helpful to think of every dependency as a bacterium that you want to isolate. Just as society avoids and isolates dangerous people, dependencies should also be isolated.
 <pre>
+# gear_inches depends on wheel
+
 def gear_inches
  ratio * wheel.diameter
 end
@@ -110,5 +117,42 @@ Order dependency can also be eliminated when creating an instance of a new objec
       )
 
 Note the use of <code>||</code> to set defaults.
+
+#### Use Factories when Dealing with External Code
+
+The sole purpose of a factory is to create an instance of another class. Since we want to create another class and not define a new class, we can work with modules. Ruby modules are most known for their ability to create [namespaces and act as mixins](http://ruby-doc.com/docs/ProgrammingRuby/html/tut_modules.html), but here the focus is on a module's ability to group together methods, classes, and constants.
+
+In other words, we can create a so called **wrapper** since that is precisely what a module does.
+
+What if my student class has an order dependency?
+
+    #Student is part of an external framework which cannot be changed
+
+    class Student
+    attr_reader :name, :grade, :gender
+      def initialize(name, grade, gender)
+        @name = name|| 'unknown'
+        @grade = grade || 'unknown'
+        @gender = gender || 'unknown'
+      end
+      ...
+    end
+
+    #wrapper
+
+    module StudentWrapper
+      def self.student(args)
+        FrameworkName::Student.new(args[:name],
+                                 args[:grade],
+                                 args[gender])
+      end
+    end
+
+    # Now we can create a student using an argument hash again.
+
+    StudentWrapper.student(
+      name: 'Shankar',
+      grade: 5,
+      gender: 'male')
 
 {% include disqus.html %}
